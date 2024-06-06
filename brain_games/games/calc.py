@@ -19,6 +19,7 @@ def get_content():
     operator = random.choice(operators)
 
     question = f'{first_number} {operator} {second_number}'
-    correct_answer = str(get_correct_answer(first_number, second_number, operator))
+    correct_answer = str(
+        get_correct_answer(first_number, second_number, operator))
 
     return question, correct_answer
